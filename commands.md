@@ -18,7 +18,7 @@
 ```git config --global user.email "<email>"```
 ```git config --global init.defaultBranch <branch>```
 
-# Listar la Configuración de git
+# Listar la Configuración de git:
 ```git config --global -e```
 
 # Inicializar repositorio de Git:
@@ -27,7 +27,7 @@
 # Ver estado de los documentos:
 ```git status```
 
-# Agregar los documentos al seguimiento de git.
+# Agregar los documentos al seguimiento de git:
 
 # Agregar todos los documentos:
 1. ```git add .```
@@ -42,7 +42,7 @@
 # Para hacer commits con la nomencaltura convecional ir a esta web
 https://www.conventionalcommits.org/
 
-# Agregar archivos y hacer commit
+# Agregar archivos y hacer commit:
 ```git commit -am "<Nuestro mensaje>"```
 # Ver los commits durante el tiempo:
 ```git log```
@@ -55,7 +55,7 @@ https://www.conventionalcommits.org/
 
 # Cambiar nombre de las ramas:
 ```git branch -m <nombre-viejo> <nuevo-nombre>```
-# Ejemplo
+# Ejemplo:
 ```git branch -m master main```
 
 # Agregar archivos de un mismo tipo que estén en la raíz del proyecto:
