@@ -88,6 +88,64 @@ https://www.conventionalcommits.org/
 ```git config --global alias.h help```
 
 # Alias del profe Fernando Herrera:
-```git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"```
+```git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"```\
+
+# Diferencias en mi proyecto:
+```git diff```
+
+# valdiar diferencias en stage:
+```git diff --stage```
+
+# Actualizar mensajes de commit:
+* ultimo commit
+```git commit --amend -m "<Mensaje nuevo>"```
+
+# Revertir commit:
+```git reset --soft HEAD^<numero de commits antes>```
+* Ejemplos: al commit anterior
+```git reset --soft HEAD^1```
+* Ejemplos: dos commits atras
+```git reset --soft HEAD^2```
+
+# Viajes en el tiempo con --soft
+```git reset --soft <identificador del commit>```
+* Ejemeplo :
+```git reset --soft 12312c3```
+
+# Viajes en el tiempo con --mixed
+* No elimina cambios peros vuelve a ese punto
+```git reset --mixed <identificador del commit>```
+* Ejemeplo :
+```git reset --mixed 12312c3```
+
+# Viajes en el tiempo con --hard:
+ 
+* Deja todo como estaba en ese commit.
+```git reset --hard <identificador del commit>```
+* Ejemeplo :
+```git reset --hard 12312c3```
+
+# Referencias en orden cronologico (SUPER IMPORTANTE)
+``` git reflog```
+
+# Renombrar archivo:
+```git mv <nombre viejo> <nombre nuevo>``` 
+* Ejemplo
+```git mv hola.html holas.html``` 
+
+# Eliminar archivo:
+```git rm <nombre>```
+
+
+
+
+
+
+
+
+
+
+
+
 
 
