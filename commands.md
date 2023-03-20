@@ -81,6 +81,11 @@ https://www.conventionalcommits.org/
 ```git add js/```
 ```git add public/```
 
+# Tags 
+*Crear tag
+```git tag <nombre>```
+*Crear tag con mensaje
+```git tag -a <tag> -m "<Mensaje tag>"```
 # Crear mis alias personalizados:
 ```git config --global alias.<mi-alias> "<acción>"```
 # Ejemplos:
@@ -109,20 +114,20 @@ https://www.conventionalcommits.org/
 
 # Viajes en el tiempo con --soft
 ```git reset --soft <identificador del commit>```
-* Ejemeplo :
+* Ejemplo :
 ```git reset --soft 12312c3```
 
 # Viajes en el tiempo con --mixed
 * No elimina cambios peros vuelve a ese punto
 ```git reset --mixed <identificador del commit>```
-* Ejemeplo :
+* Ejemplo :
 ```git reset --mixed 12312c3```
 
 # Viajes en el tiempo con --hard:
  
 * Deja todo como estaba en ese commit.
 ```git reset --hard <identificador del commit>```
-* Ejemeplo :
+* Ejemplo :
 ```git reset --hard 12312c3```
 
 # Referencias en orden cronologico (SUPER IMPORTANTE)
@@ -135,6 +140,26 @@ https://www.conventionalcommits.org/
 
 # Eliminar archivo:
 ```git rm <nombre>```
+
+# Rebase
+```git rebase -i HEAD~<numero de commits a gestionar>```
+Esto nos abre una consola interactiva luego presionamos la letra a para empezar a edictar
+
+# Repositorios remotos
+
+* Agregar mi proyecto al repositorio remoto
+```git remote add origin <URL>```
+
+* Ver fuente remota
+```git remote -v```
+
+* Enviar mi proyecto y establecerlo por default
+```git push -u origin <ramaname>```
+* Enviar mi proyecto
+```git push```
+
+# Publicar tags en repositorio
+```git push --tags```
 
 
 
